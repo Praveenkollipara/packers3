@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:url(https://images.pexels.com/photos/5025663/pexels-photo-5025663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.text-box{
+    width: 90%;
+    color: whitesmoke;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+    font-weight: 600;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+
+}
+
+.testimonial-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+
+
+
+.testimonial-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+
+.testimonial-col .fas{
+    color:#fd4 ;
+
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: arial;
+    text-align: center;
+    
+  }
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+.frst{
+    margin: 20px;
+}
+.txt i{
+    margin: 10px;
+}
+.txt i span{
+    margin: 15px;
+}
+
+.scnd{
+    margin: 15px;
+}
+
+.thrd{
+    margin: 15px;
+}
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.facilities-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+
+
+.facilities-col p{
+    padding :0;
+}
+
+.facilities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.facilities h1{
+    font-size: 30px;
+}
+.bookbutton{
+    width: 100px;
+    height: 60px;
+    text-align: center;
+    background-color: black;
+    border: none;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    border-radius: 10px;
+    margin-left: 80px;
+    
+}
+
+.bookbutton:hover{
+    background: green;
+    box-shadow: rgba(0, 0, 0, 0.2)
+  }
+
+
+.review{
+    margin-top: 20px;
+    margin-left: 80px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    width: 80%;
+    padding-left: 50px;
+    justify-content: center;
+}
+
+.review h1{
+    align-content: center;
+}
+.container{
+    position: relative;
+    width: 400px;
+    background: #111;
+    padding: 20px 30px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .container .post{
+    display: none;
+  }
+  .container .text{
+    font-size: 25px;
+    color: #666;
+    font-weight: 500;
+  }
+  .container .edit{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .container .edit:hover{
+    text-decoration: underline;
+  }
+  .container .star-widget input{
+    display: none;
+  }
+  .star-widget label{
+    font-size: 40px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+  }
+  input:not(:checked) ~ label:hover,
+  input:not(:checked) ~ label:hover ~ label{
+    color: #fd4;
+  }
+  input:checked ~ label{
+    color: #fd4;
+  }
+  input#rate-5:checked ~ label{
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+  }
+  #rate-1:checked ~ form header:before{
+    content: "I just hate it ";
+  }
+  #rate-2:checked ~ form header:before{
+    content: "I don't like it ";
+  }
+  #rate-3:checked ~ form header:before{
+    content: "It is awesome ";
+  }
+  #rate-4:checked ~ form header:before{
+    content: "I just like it ";
+  }
+  #rate-5:checked ~ form header:before{
+    content: "I just love it ";
+  }
+  .container form{
+    display: none;
+  }
+  input:checked ~ form{
+    display: block;
+  }
+  form header{
+    width: 100%;
+    font-size: 25px;
+    color: #fe7;
+    font-weight: 500;
+    margin: 5px 0 20px 0;
+    text-align: center;
+    transition: all 0.2s ease;
+  }
+  form .textarea{
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+  }
+  form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #eee;
+    border: 1px solid #333;
+    background: #222;
+    padding: 10px;
+    font-size: 17px;
+    resize: none;
+  }
+  .textarea textarea:focus{
+    border-color: #444;
+  }
+  form .btn{
+    height: 45px;
+    width: 100%;
+    margin: 15px 0;
+  }
+  form .btn button{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #444;
+    outline: none;
+    background: #222;
+    color: #999;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  form .btn button:hover{
+    background: #1b1b1b;
+  }

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/7755fb9251.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/7755fb9251.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <section class="header">
+        <div class="text-box">
+            <h1>BOBBY PACKERS AND MOVERS</h1>
+            <p>Making a website is now one of the easiest thing in the World.</p>
+        </div>
+    </section>
+    <h1 style="text-align: center; margin-top: 50px;">DETAILS</h1>
+
+
+    <section class="facilities">
+        <div class="row">
+            <div class="facilities-col card">
+                <div class="txt frst">
+                    <i class="fas fa-phone-alt"><span>86484 44996</span></i><br>
+                    <i class="fas fa-map-marker-alt"><span>Office No. 11/312, Miyapur Bachupalli Road, Miyapur,
+                            Hyderabad -
+                            500049,
+                            Near Coco Cola Factory</span></i><br>
+                    <i class="fas fa-business-time"> <span>Open 24/7</span></i>
+                </div>
+            </div>
+            <div class="facilities-col card">
+                <div class="txt scnd">
+                    <h3>Modes of Payment</h3>
+                    <li>cash</li>
+                    <li>UPI</li>
+                    <li>Interner Banking</li>
+                </div>
+            </div>
+            <div class="facilities-col card">
+                <div class="txt thrd">
+                    <h3>Get best deals by Booking Now</h3>
+                    <button class="bookbutton">Book Now</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <h1 style="text-align: center; margin-top: 50px;">REVIEW US</h1>
+    <section class="review">
+
+        <div class="container">
+            <div class="post">
+                <div class="text">Thanks for rating us!</div>
+                <div class="edit">EDIT</div>
+            </div>
+            <div class="star-widget">
+                <input type="radio" name="rate" id="rate-5">
+                <label for="rate-5" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-4">
+                <label for="rate-4" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-3">
+                <label for="rate-3" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-2">
+                <label for="rate-2" class="fas fa-star"></label>
+                <input type="radio" name="rate" id="rate-1">
+                <label for="rate-1" class="fas fa-star"></label>
+                <form action="#">
+                    <header></header>
+                    <div class="textarea">
+                        <textarea cols="30" placeholder="Describe your experience.."></textarea>
+                    </div>
+                    <div class="btn">
+                        <button type="submit">Post</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <h1>What Our Customers Says</h1>
+
+        <div class="row">
+            <div class="testimonial-col">
+
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt urna est, vel commodo
+                        nulla porta quis. Donec bibendum nisi ut elit mollis mattis. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. In hac habitasse platea dictumst.</p>
+                    <h3>Latina</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+
+                </div>
+            </div>
+            <div class="testimonial-col">
+
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tincidunt urna est, vel commodo
+                        nulla porta quis. Donec bibendum nisi ut elit mollis mattis. Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. In hac habitasse platea dictumst.</p>
+                    <h3>Bobby</h3>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        const btn = document.querySelector("button");
+        const post = document.querySelector(".post");
+        const widget = document.querySelector(".star-widget");
+        const editBtn = document.querySelector(".edit");
+        btn.onclick = () => {
+            widget.style.display = "none";
+            post.style.display = "block";
+            editBtn.onclick = () => {
+                widget.style.display = "block";
+                post.style.display = "none";
+            }
+            return false;
+        }
+    </script>
+
+</body>
+
+</html>
